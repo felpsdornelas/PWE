@@ -1,0 +1,78 @@
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body style="margin-left: 30px;">
+
+    <form>
+        <!-- Formulario para caracter livre -->
+        <label for="txtNome">Nome:</label>
+        <input id="txtNome" type="text" placeholder="Digite seu nome">
+
+        <br><br>
+
+        <!-- Formulario para Senhas  -->
+        <label for="txtSenha">Senha:</label>
+        <input id="txtSenha" type="password" placeholder="De 5 a 8 caracter">
+
+        <br><br>
+
+        <!-- Formulario Desabilitado -->
+        <label for="Desabilitado">Desabilitado:</label>
+        <input id="Desabilitado" type="text" placeholder="Desabilitado" disabled>
+
+        <br><br>
+
+        <!-- Formulario para Datas -->
+        <label for="txtDataNasc">Data de Nascimento:</label>
+        <input id="txtDataNasc" type="date">
+
+        <br><br>
+
+        <!-- Formulario para Número (Com atributos de limitar e pular o número de 2 em 2-->
+        <label for="txtNum">Número:</label>
+        <input id="txtNum" type="number" min="0" max="9998" step="2">
+
+        <br><br>
+
+        <!-- Moldura para informações de formulario (fieldset = moldura) (legend= título) -->
+        <fieldset>
+        <legend>Informações de contato</legend>
+        <!-- Formulario para Email-->
+        <label for="txtEmail">Email:</label>
+        <input id="txtEmail" type="email" placeholder="exemplo@exemplo.com">
+        <br><br>
+        <!-- Formulario para Site -->
+        <label for="txtSite">Site:</label>
+        <input id="txtSite" type="Site" placeholder="http://www.exemplo.com">
+    </fieldset> 
+
+        <br>
+
+        <!-- Selecione uma opção -->
+        <label for select>Selecione</label>
+        <select id="select">
+            <option>MG</option>
+            <option>SP</option>
+            <option>RJ</option>
+        </select>
+
+        <br><br>
+
+        <!-- Opção de selecionar sexo, com única opção redonda -->
+        <label for="">Sexo:</label>
+        <input id="masc" type="radio" name="Sexo"><label for="masc">Masculino</label>
+        <input id="fem" type="radio" name="Sexo"><label for="fem">Feminino</label>
+
+        <br><br>
+
+        <!-- Opções para seleções múltiplas -->
+        <label>Selecione as aulas que você mais gosta:</label>
+        <input id="lp" type="checkbox"> <label for="lp">LP</label>
+        <input id="pwe" type="checkbox"> <label for="pwe">PWE</label>
+        <input id="sop" type="checkbox"> <label for="sop">SOP</label>
+
+    </form>
+</body>
+</html>
