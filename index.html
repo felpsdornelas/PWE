@@ -30,8 +30,8 @@
         <label for="txtEmail">Email:</label>
         <input id="txtEmail" type="email">
         <br><br>
-        <label for="number">Número:</label>
-        <input id="number" type="number" placeholder="Apenas números (máx 9)">
+        <label for="txtTel">Telefone celular:</label>
+        <input id="txtTel" type="txt" maxlength="9"  placeholder="Apenas números (máx 9)">
         <br><br>
         <label for="txtUrl">Website pessoal/profissional:</label>
         <input id="txtUrl" type="url">
@@ -39,8 +39,52 @@
     </fieldset>
         <br>
     <fieldset>
+        <!-- Grupo 3 : Solicita ao usuário informações de localização -->
         <legend>Localização</legend>
-    </fieldset>  
+        <br>
+        <label for="txtEndereço">Endereço: </label>
+        <input id="txtEndereço" type="txt">
+        <br><br>
+        <label for="txtnum">Número: </label>
+        <input id="txtnum" type="number" min="1" max="9999" placeholder="Valor entre 1 e 9999" >
+        <br><br>
+        <label for="txtCidade">Cidade: </label>
+        <input id="txtCidade" type="txt">
+        <br><br>
+        <label for="txtEstado">Estado: </label>
+        <select id="txtEstado" name="estado" value="seleçao">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select>
+        <br><br>
+    </fieldset>
+    <button type="submit">Cadastrar</button>
+    <button type="reset">Limpar</button>
     </form>
 </body>
 </html>
