@@ -4,21 +4,23 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Cadastro de clientes</h1>
+    <p style="color:red">Todos os campos são de preenchimento obrigatório</p>
     <form>
     <fieldset>
         <!-- Grupo 1 : Solicita ao usuário Nome, Data da nascimento e sexo -->
         <legend>Dados pessoais</legend>
         <br>
         <label for="txtNome">Nome:</label>
-        <input id="txtNome" type="text" placeholder="Nome completo">
+        <input id="txtNome" type="text" placeholder="Nome completo" required>
         <br><br>
         <label for="txtDate">Data de nascimento:</label>
-        <input id="txtDate" type="date">
+        <input id="txtDate" type="date" required>
         <br><br>
         <label>Sexo:</label>
-        <input id="txtMasc" type="radio" name="genero">
+        <input id="txtMasc" type="radio" name="genero" required>
         <label for="txtMasc">Masculino</label>
-        <input id="txtFem" type="radio" name="genero">
+        <input id="txtFem" type="radio" name="genero" required>
         <label for="txtFem">Feminino</label>
         <br><br>
     </fieldset> 
@@ -28,13 +30,13 @@
         <legend>Informações de contato</legend>
         <br>
         <label for="txtEmail">Email:</label>
-        <input id="txtEmail" type="email">
+        <input id="txtEmail" type="email" required>
         <br><br>
         <label for="txtTel">Telefone celular:</label>
-        <input id="txtTel" type="txt" maxlength="9"  placeholder="Apenas números (máx 9)">
+        <input id="txtTel" type="txt" maxlength="9"  placeholder="Apenas números (máx 9)" required>
         <br><br>
         <label for="txtUrl">Website pessoal/profissional:</label>
-        <input id="txtUrl" type="url">
+        <input id="txtUrl" type="url" required>
         <br><br>
     </fieldset>
         <br>
@@ -43,16 +45,17 @@
         <legend>Localização</legend>
         <br>
         <label for="txtEndereço">Endereço: </label>
-        <input id="txtEndereço" type="txt">
+        <input id="txtEndereço" type="txt" required>
         <br><br>
         <label for="txtnum">Número: </label>
-        <input id="txtnum" type="number" min="1" max="9999" placeholder="Valor entre 1 e 9999" >
+        <input id="txtnum" type="number" min="1" max="9999" placeholder="Valor entre 1 e 9999" required>
         <br><br>
         <label for="txtCidade">Cidade: </label>
-        <input id="txtCidade" type="txt">
+        <input id="txtCidade" type="txt" required>
         <br><br>
         <label for="txtEstado">Estado: </label>
-        <select id="txtEstado" name="estado" value="seleçao">
+        <select id="txtEstado" name="estado" value="seleçao" required>
+            <option value="">Selecione</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
