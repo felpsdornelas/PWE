@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preload">
+     <title>Apostila de HTML</title>
+     <style>
+          * {
+               margin: 0px;
+               padding: 0px;
+          }
+
+          header .topo {
+               background-color: black;
+               color: white;
+               padding: 10px;
+               text-align: right;
+          }
+
+          header .centro {
+               background-color: rgb(105, 103, 103);
+               color: #ffffff;
+               padding: 10px;
+               text-align: right;
+          }
+
+          header nav ul {
+               text-align: center;
+               padding: 10px;
+               background-color: rgb(85, 85, 211);
+          }
+
+          header nav ul li {
+               display: inline-block;
+          }
+
+          header nav ul li a.menu:link,
+          a.menu:visited {
+               display: inline-block;
+               text-decoration: none;
+               color: white;
+               padding-left: 25px;
+               padding-right: 25px;
+          }
+
+          header nav ul li a.menu:hover {
+               text-decoration: underline;
+          }
+
+          main {
+               background-color: black;
+          }
+
+          main .principal {
+               background-color: #ffffff;
+               width: 1200px;
+               margin: 0px auto;
+               padding: 30px;
+          }
+
+          main .principal h3:hover {
+               letter-spacing: 2px;
+               transition: letter-spacing 0.5s ease-in-out;
+          }
+
+          main .principal h3:not(:hover) {
+               transition: letter-spacing 0.5s ease-out;
+          }
+
+          main .principal ul li a.ancora:link,
+          a.ancora:visited {
+               color: rgb(39, 37, 182);
+          }
+
+          main ul {
+               padding-top: 15px;
+               padding-bottom: 15px;
+               padding-left: 40px;
+          }
+
+          main .imagem {
+               padding: 20px;
+               text-align: center;
+          }
+
+          main .principal p {
+               margin: 1em 0;
+               text-align: justify;
+          }
+
+          footer .rodape {
+               background-color: gray;
+               padding: 10px;
+               color: white;
+               text-align: center;
+          }
+
+          footer a.ancoraRodape:link,
+          a.ancoraRodape:visited {
+               color: rgb(170, 172, 255);
+          }
+     </style>
+</head>
+
+<body>
+     <header>
+          <div class="topo">
+               <h1 id="voltarAoTopo">Tecnologias Web</h1>
+          </div>
+          <div class="centro">
+               <h2>Aprenda na prática</h2>
+          </div>
+          <nav>
+               <ul>
+                    <li><a href="#" class="menu">Matricule-se</a></li>
+                    <li><a href="#" class="menu">Quem somos?</a></li>
+                    <li><a href="#" class="menu">Missão</a></li>
+                    <li><a href="#" class="menu">Localização</a></li>
+                    <li><a href="#" class="menu">Fale conosco</a></li>
+               </ul>
+          </nav>
+     </header>
+
+     <main>
+          <div class="principal">
+               <h3>Conheça as tecnologias</h3>
+               <ul>
+                    <li><a href="#html5" class="ancora">HTML5</a></li>
+                    <li><a href="" class="ancora">CSS3 </a></li>
+               </ul>
+
+               <p><strong>Lorem ipsum dolor</strong> sit amet consectetur, adipisicing elit. Quidem obcaecati
+                    praesentium tenetur sequi impedit. Consectetur magni voluptatibus quod doloribus dolores consequatur
+                    illum officia nesciunt tempora. Quis minima vel in numquam!
+                    Ullam magnam perspiciatis ipsam vitae iste animi modi ea non aliquam architecto magni voluptatum
+                    accusamus ipsa, culpa impedit laudantium inventore illum quo deleniti? Quis rem doloremque
+                    dignissimos. Voluptate, impedit reprehenderit!
+                    Illum aut fugit ipsa voluptates enim dignissimos, ratione, molestias non, laboriosam iste in. Hic
+                    repudiandae, totam at obcaecati eaque beatae, corporis laboriosam vel sunt doloribus maxime, quis
+                    reiciendis recusandae voluptatem?
+                    Cum, voluptates dolor, culpa, temporibus voluptatem rem fugiat facere perspiciatis dolores hic
+                    aliquam ad amet qui tenetur delectus quisquam voluptate reiciendis. Ipsam provident aperiam esse sed
+                    fuga repellat, cumque unde!</p>
+
+               <div class="imagem"><img src="imagens/logo.png"
+                         alt="imagem referente aos logos do html, css, js, php e sql" width="500px">
+               </div>
+
+               <p><u>Lorem ipsum dolor</u> sit amet consectetur, adipisicing elit. Quidem obcaecati praesentium tenetur
+                    sequi impedit. Consectetur magni voluptatibus quod doloribus dolores consequatur illum officia
+                    nesciunt tempora. Quis minima vel in numquam!
+                    Ullam magnam perspiciatis ipsam vitae iste animi modi ea non aliquam architecto magni voluptatum
+                    accusamus ipsa, culpa impedit laudantium inventore illum quo deleniti? Quis rem doloremque
+                    dignissimos. Voluptate, impedit reprehenderit!
+                    Illum aut fugit ipsa voluptates enim dignissimos, ratione, molestias non, laboriosam iste in. Hic
+                    repudiandae, totam at obcaecati eaque beatae, corporis laboriosam vel sunt doloribus maxime, quis
+                    reiciendis recusandae voluptatem?
+                    Cum, voluptates dolor, culpa, temporibus voluptatem rem fugiat facere perspiciatis dolores hic
+                    aliquam ad amet qui tenetur delectus quisquam voluptate reiciendis. Ipsam provident aperiam esse sed
+                    fuga repellat, cumque unde!</p>
+
+               <p><i>Lorem ipsum dolor</i> sit amet consectetur, adipisicing elit. Quidem obcaecati praesentium tenetur
+                    sequi impedit. Consectetur magni voluptatibus quod doloribus dolores consequatur illum officia
+                    nesciunt tempora. Quis minima vel in numquam!
+                    Ullam magnam perspiciatis ipsam vitae iste animi modi ea non aliquam architecto magni voluptatum
+                    accusamus ipsa, culpa impedit laudantium inventore illum quo deleniti? Quis rem doloremque
+                    dignissimos. Voluptate, impedit reprehenderit!
+                    Illum aut fugit ipsa voluptates enim dignissimos, ratione, molestias non, laboriosam iste in. Hic
+                    repudiandae, totam at obcaecati eaque beatae, corporis laboriosam vel sunt doloribus maxime, quis
+                    reiciendis recusandae voluptatem?
+                    Cum, voluptates dolor, culpa, temporibus voluptatem rem fugiat facere perspiciatis dolores hic
+                    aliquam ad amet qui tenetur delectus quisquam voluptate reiciendis. Ipsam provident aperiam esse sed
+                    fuga repellat, cumque unde!</p>
+
+               <p><del>Lorem ipsum dolor</del> sit amet consectetur, adipisicing elit. Quidem obcaecati praesentium
+                    tenetur sequi impedit. Consectetur magni voluptatibus quod doloribus dolores consequatur illum
+                    officia nesciunt tempora. Quis minima vel in numquam!
+                    Ullam magnam perspiciatis ipsam vitae iste animi modi ea non aliquam architecto magni voluptatum
+                    accusamus ipsa, culpa impedit laudantium inventore illum quo deleniti? Quis rem doloremque
+                    dignissimos. Voluptate, impedit reprehenderit!
+                    Illum aut fugit ipsa voluptates enim dignissimos, ratione, molestias non, laboriosam iste in. Hic
+                    repudiandae, totam at obcaecati eaque beatae, corporis laboriosam vel sunt doloribus maxime, quis
+                    reiciendis recusandae voluptatem?
+                    Cum, voluptates dolor, culpa, temporibus voluptatem rem fugiat facere perspiciatis dolores hic
+                    aliquam ad amet qui tenetur delectus quisquam voluptate reiciendis. Ipsam provident aperiam esse sed
+                    fuga repellat, cumque unde!</p>
+
+               <h3 id="html5">HTML5</h3>
+
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, officiis doloribus! Fugiat
+                    consectetur quaerat perspiciatis nulla voluptatibus vel rem facilis iure? Accusamus, debitis
+                    molestias! Cupiditate doloremque vel ipsam provident deleniti.
+                    Soluta modi quos consectetur excepturi nam eos quia maiores maxime ut voluptate, consequuntur at
+                    odit facilis veniam, incidunt, pariatur animi quas repudiandae nisi. Ullam eum quasi laudantium
+                    perspiciatis eius aliquid.</p>
+
+               <ul>
+                    <li>Qualquer pessoa que deseja aprender HTML1</li>
+                    <li>Qualquer pessoa que deseja aprender HTML2</li>
+                    <li>Qualquer pessoa que deseja aprender HTML3</li>
+               </ul>
+
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio voluptate voluptas veniam
+                    consequuntur, voluptatem non ipsum exercitationem pariatur soluta tenetur nam natus! Adipisci vero a
+                    doloremque voluptas dolore sit cupiditate!
+                    Officiis fugiat ut sed, voluptatum tempora laborum? Quibusdam quod enim earum dolorem accusantium
+                    quo velit quos, doloremque voluptas illo voluptates similique corporis eligendi! Sint, cumque.
+                    Quisquam iste blanditiis sunt sequi.
+                    Saepe excepturi velit id asperiores, eaque eos odio! Odit cupiditate esse numquam quae sequi, sunt
+                    accusamus aliquid enim aspernatur, veritatis dolorem earum magnam iusto. Deserunt ipsam ipsa aliquid
+                    nam deleniti!
+                    Sunt sed delectus praesentium sit, ea provident quas cupiditate, aspernatur in doloremque laudantium
+                    dolor architecto, dolores culpa! Beatae culpa minus at qui, ea amet, adipisci veniam consequatur,
+                    iure nam consectetur?
+                    A ea natus, in temporibus soluta aut! Omnis, at! Deserunt quos, totam ratione optio explicabo
+                    voluptatibus cumque enim a non nobis porro doloremque atque officia architecto excepturi id quasi
+                    voluptatem?</p>
+
+               <a href="#voltarAoTopo" class="ancora">[Voltar ao topo]</a>
+          </div>
+     </main>
+
+     <footer>
+          <div class="rodape">
+               <p>Desenvolvido por <a href="" class="ancoraRodape">Wilton de Paula Filho</a></p>
+          </div>
+     </footer>
+</body>
+
+</html>
