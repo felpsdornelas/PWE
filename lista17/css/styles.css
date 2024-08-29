@@ -1,0 +1,110 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+.img {
+     width: 100%;
+     height: 100%;     
+     display: block;
+     margin: auto;
+ }
+body{
+     background-color: black;
+     font-family: sans-serif;
+}
+header nav ul{
+     background-color: rgb(0, 0, 80);
+     text-align: center;
+}
+header nav li{
+     display: inline-block;
+}
+header nav a{ 
+     display: inline-block;     
+     text-transform: uppercase;
+     text-decoration: none;
+     font-weight: bold;
+     padding: 25px 35px 25px 40px;
+}
+header nav a:link, a:visited{
+     color: white;
+}
+header nav a:hover{
+     text-decoration: underline;
+}
+main section{
+     background-color: rgb(197, 197, 197);
+     width: 1200px;
+     margin: auto;
+     padding: 50px;
+}
+main section:nth-of-type(odd){
+     background-color: rgb(197, 197, 197);
+}
+main section:nth-of-type(even){     
+     background-color: rgb(255, 255, 255);
+}
+main section h1{
+    font-size: 35px; 
+    text-transform: uppercase;
+}
+main section p{
+     margin: 20px 0px 20px 0px;
+     text-align: justify;
+}
+.destaque{
+     font-weight: bold;
+     font-size: 24px;
+}
+main section button{
+     color: white;
+     padding: 10px 20px 10px 20px;
+     border-radius: 5px;
+     border: none;
+     font-size: 15px;
+}
+main section button:hover{
+     background-color: rgb(255, 123, 0);
+     color: white;
+     padding: 10px 20px 10px 20px;
+     border-radius: none;
+     cursor: pointer;
+}
+main section h2{
+     font-weight: bold;
+     font-size: 30px;
+     margin-bottom: 30px;
+}
+main section h3{
+     font-size: 25px;
+}
+.btnPreto{     
+     background-color: black;
+}
+.btnAzul{     
+     background-color: rgb(0, 52, 163);
+}
+.container{
+     display: flex;
+     flex-direction: row;
+}
+.container > div{
+     width: 100%;
+     padding: 20px;
+}
+.secao3{
+     text-align: center;
+}
+.secao3 div p{
+     text-align: justify;
+}
+.secao3 img{
+     width: 90%;
+}
+footer{
+     background-color: black;
+     color: white;
+     text-align: center;
+     padding: 30px;
+}
