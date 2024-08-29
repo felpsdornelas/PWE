@@ -1,0 +1,85 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: "Oswald", sans-serif;
+}
+p{
+     margin: 1em 0; /* Adiciona espaçamento vertical entre os parágrafos */
+}
+nav ul{
+     background-color: black;
+     text-align: right;
+     padding: 0px;
+
+}
+nav ul li{
+     display: inline-block;  
+     
+}
+a:link, a:visited{
+     display: inline-block; 
+     color: white;
+     text-decoration: none;         
+     padding: 20px 40px 20px 60px;
+     font-weight: bold;
+     background-repeat: no-repeat;
+     background-size: 30px;
+     background-position: 15px 17px;
+}
+.opcaoHtml:hover, .opcaoCss:hover, .opcaoJs:hover {     
+     background-color: white;
+     color: black;
+}
+.opcaoHtml:hover{     
+     background-image: url('../img/html5.png');
+}
+.opcaoCss:hover{     
+     background-image: url('../img/css3.png');
+}
+.opcaoJs:hover{     
+     background-image: url('../img/javascript.png');
+}
+.imgTopo{
+     max-width: 100%;
+    height: auto;
+    display: block;
+}
+main section{
+     margin: 60px 0px 60px 0px;
+}
+main section h1,h2{
+     color: black;  
+     font-size: 40px;
+     text-align: center;
+}
+main section h2{
+     color: red;
+     font-size: 30px;
+}
+.central{
+     background-color: rgb(236, 236, 236);
+     text-align: center;
+}
+.container h3{
+     padding: 15px;
+     color: rgb(0, 97, 0);
+     font-size: 30px;
+}
+.container{
+     display: flex;
+     flex-direction: row;     
+     width: 1200px;
+     margin: auto;
+}
+.container > div{
+     padding: 20px;
+}
+footer{
+     text-align: center;
+     background-color: black;
+     color: white;
+     font-weight: bold;
+     padding: 30px;
+     width: 100%;
+}
